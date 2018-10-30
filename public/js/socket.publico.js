@@ -20,6 +20,10 @@ socket.on('estadoActual', function(data) {
 });
 
 socket.on('ultimos4', function(data) {
+
+    var audio = new Audio('audio/new-ticket.mp3');
+    audio.play();
+
     actualizaHTML(data.ultimos4);
 });
 
